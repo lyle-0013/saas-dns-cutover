@@ -1,0 +1,12 @@
+{
+  "name": "saas-dns-cutover",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/dns_cutover.ts",
+    "test": "node --experimental-strip-types --test src/dns_cutover.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": { "zod": "^3.23.8" },
+  "devDependencies": { "@types/node": "^22.0.0", "typescript": "^5.7.0" }
+}
